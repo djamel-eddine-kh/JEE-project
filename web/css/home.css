@@ -1,0 +1,230 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon/icomoon.eot');
+	src:url('../fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon/icomoon.woff') format('woff'),
+		url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+ body {
+  display: flex;
+  
+
+   
+}
+iframe{
+    border: none;
+ position: absolute;
+
+width: 65%; height: 100%;
+   
+}
+.righSide{
+    width: 100%;
+}
+header {
+  border-left: 2px solid white;
+  text-align: center;
+  padding: auto;
+  margin: 8px;
+  width: 100%;
+  /* Set the desired height for the header */
+}
+header ul {
+      display: flex;
+    /*metter la list au meme ligne*/
+    list-style-type: none;
+    /*supprimer le style de liste*/
+    justify-content: space-evenly;
+    /*aligner la list au milieu*/
+   
+}
+nav {
+  text-align: center;
+  width: 30%;
+    height: 650px;
+
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+   justify-content: space-evenly;
+  padding: 0;
+      margin: auto;
+}
+
+nav ul li {
+  margin-top: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+section {
+}
+
+
+/* General button style (reset) */
+.btn {
+	border: none;
+	font-family: inherit;
+	
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 15px 40px;
+	display: inline-block;
+	margin: 2px;
+	letter-spacing: 1px;
+	font-weight: 600;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+        align-items: center;
+  justify-content: space-between;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+/* Button 1 */
+.btn-1 {
+	/*border: 1px solid #0e83cd;*/
+	color: #0e83cd;
+}
+
+
+/* Button 1l */
+.btn-1l:after {
+	width: 0%;
+	height: 100%;
+	bottom: 0;
+	right: 0;
+        background: #0e83cd;
+}
+
+.btn-1l:hover,
+.btn-1l:active {
+	color: white;
+        background-color: #0e83cd;
+}
+
+.btn-1l:hover:after,
+.btn-1l:active:after {
+	width: 100%;
+}
+
+
+
+/* Button 4 */
+.btn-4 {
+	border-radius: 50px;
+	/*border: 1px solid #17954c;*/
+	color: #17954c;
+	overflow: hidden;
+      
+}
+
+.btn-4:active {
+	border-color: #fff;
+	color: #17954c;
+}
+
+.btn-4:hover {
+	background: red;
+}
+
+.btn-4:before {
+	position: absolute;
+	height: 100%;
+	font-size: 125%;
+	line-height: 3.5;
+	color: #fff;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-4:active:before {
+	color: #17954c;
+}
+
+
+/* Button 4c */
+.btn-4c:before {
+	left: 70%;
+	opacity: 0;
+	top: 0;
+}
+
+.btn-4c:hover:before {
+	left: 80%;
+	opacity: 1;
+}
+
+/* Button 4d */
+.btn-4d:before {
+	left: 30%;
+	opacity: 0;
+	top: 0;
+}
+
+.btn-4d:hover:before {
+	left: 10%;
+	opacity: 1;
+}
+
+
+.button {
+  padding: 18px 20px;
+  background-color: #050801;
+  color: #03e9f4;
+  font-weight: 400;
+  border: none;
+  border-radius: 3px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+
+.button :hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
